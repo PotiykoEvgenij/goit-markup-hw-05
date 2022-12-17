@@ -16,10 +16,10 @@
         <!-- Top line -->
         <div class="container top-line">
             <nav class="nav">
-                <a href="./index.html"><span class="logo-web">WEB</span><span class="logo-studio">STUDIO</span></a>
+                <a href="./index.html" class="logo"><span class="logo-web">WEB</span><span class="logo-studio">STUDIO</span></a>
                     <!-- Menu nav -->
                 <ul class="nav-links">
-                    <li><a href="./index.html" class="nav-link">Studio</a></li>
+                    <li><a href="./index.html" class="nav-link current-page">Studio</a></li>
                     <li><a href="./porfolio.html" class="nav-link">Porfolio</a></li>
                     <li><a href="" class="nav-link">Contacts</a></li>
                 </ul>
@@ -36,7 +36,7 @@
                     <h1 class="header-title">
                         Effective Solutions for Your Business
                     </h1>
-                    <button type="button" class="button">Order Service</button>
+                    <button type="button" class="button" data-modal-open>Order Service</button>
                 </div>
         </section>
     </header>
@@ -361,5 +361,16 @@
             </div>
         </div>       
     </footer>
+    <!-- Modal page -->
+    <div class="modal-bg is-hidden" data-modal>
+        <div class="modal-page">
+            <button class="button-close" data-modal-close>
+                <svg class="button-ico">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
